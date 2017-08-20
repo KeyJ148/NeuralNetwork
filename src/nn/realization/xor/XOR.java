@@ -8,8 +8,8 @@ import nn.structure.Synapse;
 
 public class XOR implements Realization {
 
-    public static final double A = 0.3;
-    public static final double E = 0.7;
+    public static final double A = 0.9;
+    public static final double E = 2.1;
     public static final int COUNT_HIDDEN_NEURONS = 4;
 
     @Override

@@ -63,7 +63,8 @@ public class NeuralNetwork {
             sum += (idealOutput[i] - output[i])*(idealOutput[i] - output[i]);
         }
 
-        double error = sum/output.length;
+        //-1 потому что в выходном слое output.lenght-1 нейрон, т.к. последн€€ €чейка массива используетс€ дл€ записи ошибки
+        double error = sum/(output.length-1);
         output[output.length-1] = error;
 
         if (teach) teach(input, output);
