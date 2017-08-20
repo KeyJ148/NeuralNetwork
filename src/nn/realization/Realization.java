@@ -13,4 +13,5 @@ public interface Realization {
     double deltaOutput(double output, double ideal);
     double deltaHidden(Neuron neuron);
     double[] getIdealOutput(double[] input);
+    double[][] getAllInputSets();
 }

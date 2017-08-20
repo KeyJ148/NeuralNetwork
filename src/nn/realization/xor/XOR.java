@@ -8,14 +8,18 @@ import nn.structure.Synapse;
 
 public class XOR implements Realization {
 
+    public static final double A = 0.3;
+    public static final double E = 0.7;
+    public static final int COUNT_HIDDEN_NEURONS = 4;
+
     @Override
     public double getA() {
-        return 0.9;
+        return A;
     }
 
     @Override
     public double getE() {
-        return 2.1;
+        return E;
     }
 
     @Override
@@ -24,7 +28,7 @@ public class XOR implements Realization {
         Neuron[] input = new Neuron[2];
         for (int i=0; i<input.length; i++) input[i] = new Neuron(0, storage);
 
-        Neuron[] hidden = new Neuron[2];
+        Neuron[] hidden = new Neuron[COUNT_HIDDEN_NEURONS];
         for (int i=0; i<hidden.length; i++) hidden[i] = new Neuron(1, storage);
 
         Neuron output = new Neuron(2, storage);
@@ -113,6 +117,16 @@ public class XOR implements Realization {
         boolean resultBool = a^b;
         double resultDouble = (resultBool)? 1 : 0;
         double[] result = {resultDouble};
+        return result;
+    }
+
+    @Override
+    public double[][] getAllInputSets(){
+        double[][] result = {{0,0},
+                             {0,1},
+                             {1,0},
+                             {1,1}};
+
         return result;
     }
 }
