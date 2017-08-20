@@ -111,8 +111,8 @@ public class XOR implements Realization {
     public double[] getIdealOutput(double[] input){
         int aInt = (int) Math.round(input[0]);
         int bInt = (int) Math.round(input[1]);
-        boolean a = (aInt == 1)? true : false;
-        boolean b = (bInt == 1)? true : false;
+        boolean a = (aInt == 1);
+        boolean b = (bInt == 1);
 
         boolean resultBool = a^b;
         double resultDouble = (resultBool)? 1 : 0;
