@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+
+    <class name="nn.structure.Neuron" table="neuron">
+        <id name="id" column="id">
+            <generator class="identity"/>
+        </id>
+
+        <set name="inputSynapses" table="neuron_synapses_input" lazy="false">
+            <key column="neuron_id"/>
+            <many-to-many column="synapse_id" class="nn.structure.Synapse"/>
+        </set>
+
+        <property name="layer" column="layer"/>
+        <property name="outputId" column="output_id"/>
+    </class>
+</hibernate-mapping>
