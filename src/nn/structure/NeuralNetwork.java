@@ -1,7 +1,6 @@
 package nn.structure;
 
 import hbn.HibernateUtil;
-import nn.realization.Realization;
 import org.hibernate.Session;
 
 import java.util.ArrayList;

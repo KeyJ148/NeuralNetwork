@@ -1,6 +1,6 @@
 package nn.gui;
 
-import nn.realization.Realization;
+import nn.structure.Realization;
 import nn.structure.NeuralNetwork;
 
 import java.io.BufferedReader;

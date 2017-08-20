@@ -1,6 +1,6 @@
-package nn.realization.xor;
+package nn.realization;
 
-import nn.realization.Realization;
+import nn.structure.Realization;
 import nn.structure.Layer;
 import nn.structure.NeuralNetwork;
 import nn.structure.Neuron;

@@ -1,7 +1,7 @@
 package nn.gui;
 
 import hbn.HibernateUtil;
-import nn.realization.Realization;
+import nn.structure.Realization;
 import nn.structure.Layer;
 import nn.structure.NeuralNetwork;
 import nn.structure.Neuron;

@@ -1,7 +1,6 @@
-package nn;
+package nn.realization;
 
 import nn.gui.Console;
-import nn.realization.xor.XOR;
 
 public class Start {
 

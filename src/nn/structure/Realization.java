@@ -1,7 +1,4 @@
-package nn.realization;
-
-import nn.structure.NeuralNetwork;
-import nn.structure.Neuron;
+package nn.structure;
 
 public interface Realization {
     double getA();
